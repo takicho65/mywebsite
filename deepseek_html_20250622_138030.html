@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Takele Zike Geneti | Agronomist & Crop Scientist</title>
+    <style>
+        :root {
+            --primary: #2c5e1a;
+            --secondary: #6b8e23;
+            --light: #f5f5f5;
+            --dark: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            background: var(--secondary);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background: url('field-research.jpg') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .pub-list {
+            list-style: none;
+            padding: 0;
+        }
+        .pub-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Takele Zike Geneti</h1>
+        <p>Agronomist | Crop Scientist | Agricultural Researcher</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Optimizing Crop Systems for Food Security</h2>
+            <p>Bridging research and smallholder farming in Ethiopia</p>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="takele-profile.jpg" alt="Takele Zike Geneti" style="float: right; width: 200px; margin-left: 1rem; border-radius: 50%;">
+        <p>I am an Ethiopian agronomist specializing in crop physiology, seed systems, and nutrient management. Currently pursuing my PhD in Crop Science at Hunan Agricultural University, China, while serving as an Associate Researcher at the Ethiopian Institute of Agricultural Research (EIAR).</p>
+        
+        <h3>Education</h3>
+        <ul>
+            <li><strong>PhD in Crop Science</strong> (2024-2028) - Hunan Agricultural University, China</li>
+            <li><strong>MSc in Agronomy</strong> (2015-2017) - Ambo University, Ethiopia</li>
+            <li><strong>BSc in Plant Science</strong> (2010-2014) - Ambo University, Ethiopia</li>
+        </ul>
+    </section>
+
+    <section id="research">
+        <h2>Research Focus</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 5px;">
+                <h3>Seed Systems Technology</h3>
+                <p>Developing optimized protocols for chickpea and tef production in Ethiopian Vertisols.</p>
+            </div>
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 5px;">
+                <h3>Climate-Resilient Crops</h3>
+                <p>Participatory selection of drought-tolerant varieties for smallholder farmers.</p>
+            </div>
+            <div style="background: #f9f9f9; padding: 1rem; border-radius: 5px;">
+                <h3>Precision Nutrient Management</h3>
+                <p>Phosphorus and nitrogen optimization in cereal-legume systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <strong>Geneti T.Z. et al. (2024)</strong><br>
+                "Chickpea seeding rate optimization in Vertisols"<br>
+                <em>American Journal of Plant Biology</em><br>
+                <a href="#">DOI Link</a> | <a href="#">PDF</a>
+            </li>
+            <li class="pub-item">
+                <strong>Geneti T.Z. (2024)</strong><br>
+                "Nitrogen x seed rate interactions in bread wheat"<br>
+                <em>Journal of Plant Sciences</em><br>
+                <a href="#">DOI Link</a> | <a href="#">PDF</a>
+            </li>
+            <li class="pub-item">
+                <strong>Geneti T.Z. (2017)</strong><br>
+                "Phosphorus thresholds for lentil production"<br>
+                <em>Advances in Crop Science and Technology</em><br>
+                <a href="#">DOI Link</a> | <a href="#">PDF</a>
+            </li>
+        </ul>
+        <p><a href="https://orcid.org/0000-0002-0355-8064" target="_blank">View all publications on ORCID →</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>For research collaborations or inquiries:</p>
+        <ul>
+            <li>Email: <a href="mailto:takele.zike@eiar.gov.et">takele.zike@eiar.gov.et</a></li>
+            <li>ORCID: <a href="https://orcid.org/0000-0002-0355-8064" target="_blank">0000-0002-0355-8064</a></li>
+            <li>EIAR Wolkite Research Center, Ethiopia</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Takele Zike Geneti. All rights reserved.</p>
+        <p>Designed for academic and professional purposes</p>
+    </footer>
+</body>
+</html>
